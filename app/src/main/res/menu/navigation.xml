@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_gym"
+        android:icon="@drawable/ic_navigation_gym_black_24dp"
+        android:title="场馆" />
+
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/ic_navigation_history_black_24dp"
+        android:title="历史" />
+
+    <item
+        android:id="@+id/navigation_me"
+        android:icon="@drawable/ic_navigation_me_black_24dp"
+        android:title="我" />
+</menu>

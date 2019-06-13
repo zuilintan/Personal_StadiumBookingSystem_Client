@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_drawable">
+
+    <TextView
+        android:id="@+id/tv_confirm_title"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center|bottom"
+        android:text="标题"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_confirm_message"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="消息"
+        android:textAlignment="center"
+        android:textColor="@color/colorGrey700"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_confirm_title" />
+
+    <View
+        android:id="@+id/view_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGrey500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_confirm_message" />
+
+    <TextView
+        android:id="@+id/tv_confirm_cancel"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textAlignment="center"
+        android:textColor="@color/colorGrey700"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_confirm_go"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_confirm" />
+
+    <TextView
+        android:id="@+id/tv_confirm_go"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/dialog_view_drawable"
+        android:gravity="center"
+        android:text="确定"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_confirm_cancel"
+        app:layout_constraintTop_toBottomOf="@+id/view_confirm" />
+
+</android.support.constraint.ConstraintLayout>

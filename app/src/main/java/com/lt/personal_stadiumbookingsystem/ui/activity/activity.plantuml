@@ -1,0 +1,280 @@
+@startuml
+
+title __ACTIVITY's Class Diagram__\n
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      class AboutActivity {
+          - mTvAboutInfo : TextView
+          # setLayoutResId()
+          # bindData()
+          # bindView()
+          # initData()
+          # initView()
+          # initListener()
+          {static} + actionStart()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      class AccountActivity {
+          - mTvAccountName : TextView
+          - mCslAccountName : ConstraintLayout
+          - mTvAccountNickname : TextView
+          - mCslAccountNickname : ConstraintLayout
+          - mTvAccountRealname : TextView
+          - mCslAccountRealname : ConstraintLayout
+          - mTvAccountSex : TextView
+          - mCslAccountSex : ConstraintLayout
+          - mTvAccountPhone : TextView
+          - mCslAccountPhone : ConstraintLayout
+          - mTvAccountEmail : TextView
+          - mCslAccountEmail : ConstraintLayout
+          - mTvAccountQq : TextView
+          - mCslAccountQq : ConstraintLayout
+          - mCslAccountPassword : ConstraintLayout
+          # setLayoutResId()
+          # bindData()
+          # bindView()
+          # initData()
+          # initView()
+          # initListener()
+          + onClick()
+          + onOptionsItemSelected()
+          + onBackPressed()
+          - editInfoDialog()
+          - choiceSexDialog()
+          - editPasswd()
+          - checkEffective()
+          {static} + actionStart()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      class LoginActivity {
+          - mPbLogin : ProgressBar
+          - mIvLoginAvatar : ImageView
+          - mEtLoginAccountnumber : EditText
+          - mEtLoginAccountpasswd : EditText
+          - mTvLoginRegister : TextView
+          - mBtnLoginGo : Button
+          - mInputAccountName : String
+          - mInputAccountPasswd : String
+          # setLayoutResId()
+          # bindData()
+          # bindView()
+          # initData()
+          # initView()
+          # initListener()
+          - checkEffective()
+          {static} + actionStart()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      class MainActivity {
+          - mCtlTop : CollapsingToolbarLayout
+          - mIvTop : ImageView
+          - mTbTop : Toolbar
+          - mBnvMain : BottomNavigationView
+          - mTabIndex : int
+          # setLayoutResId()
+          # bindData()
+          # bindView()
+          # initData()
+          # initView()
+          # initListener()
+          - hideFragment()
+          {static} + actionStart()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      class OrderActivity {
+          {static} - mIsFromTimeActivity : boolean
+          - mTvOrderGymname : TextView
+          - mTvOrderSitenumber : TextView
+          - mTvOrderDate : TextView
+          - mTvOrderTimestart : TextView
+          - mTvOrderTimeend : TextView
+          - mTvOrderNumber : TextView
+          - mTvOrderPrice : TextView
+          - mBtnOrderCancel : Button
+          - mBtnOrderPay : Button
+          - mOrderJson : String
+          # setLayoutResId()
+          # bindData()
+          # bindView()
+          # initData()
+          # initView()
+          # initListener()
+          {static} + actionStart()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      class RegisterActivity {
+          - mPbRegister : ProgressBar
+          - mIvRegisterAvatar : ImageView
+          - mEtRegisterAccountnumber : EditText
+          - mEtRegisterAccountpasswd : EditText
+          - mEtRegisterConfirmpasswd : EditText
+          - mRgRegisterSex : RadioGroup
+          - mRadioButton : RadioButton
+          - mBtnRegisterGo : Button
+          - mInputAccountName : String
+          - mInputAccountPasswd : String
+          - mInputConfirmPasswd : String
+          - mInputSex : String
+          # setLayoutResId()
+          # bindData()
+          # bindView()
+          # initData()
+          # initView()
+          # initListener()
+          - checkEffective()
+          {static} + actionStart()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      class SettingActivity {
+          - mCslSettingLogout : ConstraintLayout
+          # setLayoutResId()
+          # bindData()
+          # bindView()
+          # initData()
+          # initView()
+          # initListener()
+          + onClick()
+          {static} + actionStart()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      class SiteActivity {
+          - mSrlSite : RefreshLayout
+          - mSiteList : List<Site>
+          - mLayoutManager : GridLayoutManager
+          - mRcvSite : RecyclerView
+          - mGymName : String
+          # setLayoutResId()
+          # bindData()
+          # bindView()
+          # initData()
+          # initView()
+          # initListener()
+          {static} + actionStart()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      class ThemeActivity {
+          - mRbThemeTeal : RadioButton
+          - mCslThemeTeal : ConstraintLayout
+          - mRbThemeIndigo : RadioButton
+          - mCslThemeIndigo : ConstraintLayout
+          # setLayoutResId()
+          # bindData()
+          # bindView()
+          # initData()
+          # initView()
+          # initListener()
+          + onClick()
+          {static} + actionStart()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      class TimeActivity {
+          - mDataTimeList : List<DataTime>
+          - mSrlTime : RefreshLayout
+          - mTlTime : TabLayout
+          - mLayoutManager : LinearLayoutManager
+          - mRcvTime : RecyclerView
+          - mGymName : String
+          - mSiteNumber : String
+          - mIsRcvActiveScroll : boolean
+          - mRcvScrollOrientation : int
+          - mPosition : int
+          # setLayoutResId()
+          # bindData()
+          # bindView()
+          # initData()
+          # initView()
+          # initListener()
+          - updateTabSelect()
+          {static} + actionStart()
+      }
+    }
+  }
+  
+
+  AboutActivity -up-|> BaseActivity
+  HostCallbacks -up-|> FragmentHostCallback
+  AccountActivity -up-|> OnClickListener
+  AccountActivity -up-|> BaseActivity
+  HostCallbacks -up-|> FragmentHostCallback
+  LoginActivity -up-|> BaseActivity
+  HostCallbacks -up-|> FragmentHostCallback
+  MainActivity -up-|> BaseActivity
+  MainActivity o-- GymFragment : mGymFragment
+  MainActivity o-- HistoryFragment : mHistoryFragment
+  MainActivity o-- MeFragment : mMeFragment
+  HostCallbacks -up-|> FragmentHostCallback
+  OrderActivity -up-|> BaseActivity
+  OrderActivity o-- Order : mOrder
+  OrderActivity o-- ConfirmDialog : mPayDialog
+  OrderActivity o-- ConfirmDialog : mCancelDialog
+  HostCallbacks -up-|> FragmentHostCallback
+  RegisterActivity -up-|> BaseActivity
+  HostCallbacks -up-|> FragmentHostCallback
+  SettingActivity -up-|> OnClickListener
+  SettingActivity -up-|> BaseActivity
+  HostCallbacks -up-|> FragmentHostCallback
+  SiteActivity -up-|> BaseActivity
+  SiteActivity o-- SiteAdapter : mSiteAdapter
+  HostCallbacks -up-|> FragmentHostCallback
+  ThemeActivity -up-|> OnClickListener
+  ThemeActivity -up-|> BaseActivity
+  HostCallbacks -up-|> FragmentHostCallback
+  TimeActivity -up-|> BaseActivity
+  TimeActivity o-- TimeAdapter : mTimeAdapter
+  HostCallbacks -up-|> FragmentHostCallback
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

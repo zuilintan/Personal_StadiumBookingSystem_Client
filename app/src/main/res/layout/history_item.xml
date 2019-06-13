@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="@dimen/cardview_margin"
+    app:cardCornerRadius="@dimen/cardview_cornerradius"
+    app:cardElevation="@dimen/cardview_elevation">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ripple_white">
+
+        <TextView
+            android:id="@+id/tv_historyitem_gymname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="场馆"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_historyitem_sitenumber"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_historyitem_sitenumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="场地"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_historyitem_gymname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@id/tv_historyitem_gymname"
+            app:layout_constraintTop_toTopOf="@+id/tv_historyitem_gymname" />
+
+        <TextView
+            android:id="@+id/tv_historyitem_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="日期"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_historyitem_1"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_historyitem_sitenumber" />
+
+        <TextView
+            android:id="@+id/tv_historyitem_timestart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="开始时间"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_historyitem_date"
+            app:layout_constraintStart_toStartOf="@+id/guideline_historyitem_1"
+            app:layout_constraintTop_toTopOf="@+id/tv_historyitem_date" />
+
+        <TextView
+            android:id="@+id/tv_historyitem_and"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_historyitem_timestart"
+            app:layout_constraintEnd_toStartOf="@id/tv_historyitem_timeend"
+            app:layout_constraintStart_toEndOf="@+id/tv_historyitem_timestart"
+            app:layout_constraintTop_toTopOf="@+id/tv_historyitem_timestart" />
+
+        <TextView
+            android:id="@+id/tv_historyitem_timeend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="结束时间"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_historyitem_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_historyitem_date" />
+
+        <TextView
+            android:id="@+id/tv_historyitem_orderstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="状态"
+            android:textColor="?attr/colorAccent"
+            android:textSize="18sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_historyitem_cancel"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_historyitem_timeend" />
+
+        <Button
+            android:id="@+id/btn_historyitem_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ripple_primary_fillet"
+            android:text="取消"
+            android:textColor="@color/colorWhite"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_historyitem_pay"
+            app:layout_constraintTop_toBottomOf="@+id/tv_historyitem_timeend" />
+
+        <Button
+            android:id="@+id/btn_historyitem_pay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ripple_primary_fillet"
+            android:text="支付"
+            android:textColor="@color/colorWhite"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_historyitem_timeend" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_historyitem_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

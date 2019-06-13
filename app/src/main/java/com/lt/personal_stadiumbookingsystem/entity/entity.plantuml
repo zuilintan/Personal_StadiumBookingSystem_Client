@@ -1,0 +1,227 @@
+@startuml
+
+title __ENTITY's Class Diagram__\n
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.entity {
+      class Account {
+          - account_id : Integer
+          - account_name : String
+          - account_passwd : String
+          - account_nickname : String
+          - account_realname : String
+          - account_coin : Float
+          - account_sex : String
+          - account_phone : String
+          - account_email : String
+          - account_qq : String
+          - account_role : String
+          - account_verifycode : String
+          - account_verifystate : Integer
+          - account_loginstate : Integer
+          - account_createtime : String
+          + toString()
+          + equals()
+          + hashCode()
+          + getAccount_id()
+          + setAccount_id()
+          + getAccount_name()
+          + setAccount_name()
+          + getAccount_passwd()
+          + setAccount_passwd()
+          + getAccount_nickname()
+          + setAccount_nickname()
+          + getAccount_realname()
+          + setAccount_realname()
+          + getAccount_coin()
+          + setAccount_coin()
+          + getAccount_sex()
+          + setAccount_sex()
+          + getAccount_phone()
+          + setAccount_phone()
+          + getAccount_email()
+          + setAccount_email()
+          + getAccount_qq()
+          + setAccount_qq()
+          + getAccount_role()
+          + setAccount_role()
+          + getAccount_verifycode()
+          + setAccount_verifycode()
+          + getAccount_verifystate()
+          + setAccount_verifystate()
+          + getAccount_loginstate()
+          + setAccount_loginstate()
+          + getAccount_createtime()
+          + setAccount_createtime()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.entity {
+      class DataTime {
+          - gym : String
+          - site : String
+          - date : String
+          - time : List<Time>
+          + toString()
+          + equals()
+          + hashCode()
+          + getGym()
+          + setGym()
+          + getSite()
+          + setSite()
+          + getDate()
+          + setDate()
+          + getTime()
+          + setTime()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.entity {
+      class Gym {
+          - gym_id : Integer
+          - gym_name : String
+          - gym_price : Float
+          - gym_managestate : Integer
+          - gym_opentime : String
+          - gym_closetime : String
+          + toString()
+          + equals()
+          + hashCode()
+          + getGym_id()
+          + setGym_id()
+          + getGym_name()
+          + setGym_name()
+          + getGym_price()
+          + setGym_price()
+          + getGym_managestate()
+          + setGym_managestate()
+          + getGym_opentime()
+          + setGym_opentime()
+          + getGym_closetime()
+          + setGym_closetime()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.entity {
+      class Order {
+          - order_id : Integer
+          - order_number : String
+          - order_date : String
+          - order_timestart : String
+          - order_timeend : String
+          - order_state : Integer
+          - order_createtime : String
+          - account_id : Integer
+          - account_name : String
+          - account_nickname : String
+          - site_id : Integer
+          - site_number : String
+          - gym_id : Integer
+          - gym_name : String
+          - gym_price : Float
+          + toString()
+          + equals()
+          + hashCode()
+          + getOrder_id()
+          + setOrder_id()
+          + getOrder_number()
+          + setOrder_number()
+          + getOrder_date()
+          + setOrder_date()
+          + getOrder_timestart()
+          + setOrder_timestart()
+          + getOrder_timeend()
+          + setOrder_timeend()
+          + getOrder_state()
+          + setOrder_state()
+          + getOrder_createtime()
+          + setOrder_createtime()
+          + getAccount_id()
+          + setAccount_id()
+          + getAccount_name()
+          + setAccount_name()
+          + getAccount_nickname()
+          + setAccount_nickname()
+          + getSite_id()
+          + setSite_id()
+          + getSite_number()
+          + setSite_number()
+          + getGym_id()
+          + setGym_id()
+          + getGym_name()
+          + setGym_name()
+          + getGym_price()
+          + setGym_price()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.entity {
+      class Site {
+          - site_id : Integer
+          - site_number : String
+          - site_managestate : Integer
+          - gym_id : Integer
+          - gym_name : String
+          + toString()
+          + equals()
+          + hashCode()
+          + getSite_id()
+          + setSite_id()
+          + getSite_number()
+          + setSite_number()
+          + getSite_managestate()
+          + setSite_managestate()
+          + getGym_id()
+          + setGym_id()
+          + getGym_name()
+          + setGym_name()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.entity {
+      class Time {
+          - time_start : String
+          - time_end : String
+          - time_orderstate : Integer
+          - time_expirestate : Integer
+          + toString()
+          + equals()
+          + hashCode()
+          + getTime_start()
+          + setTime_start()
+          + getTime_end()
+          + setTime_end()
+          + getTime_orderstate()
+          + setTime_orderstate()
+          + getTime_expirestate()
+          + setTime_expirestate()
+      }
+    }
+  }
+  
+
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

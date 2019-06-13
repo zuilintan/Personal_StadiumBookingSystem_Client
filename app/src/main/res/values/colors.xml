@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPink500">#E91E63</color>
+    <color name="colorPink600">#D81B60</color>
+    <color name="colorPink700">#C2185B</color>
+    <color name="colorPinkA200">#FF4081</color>
+    <color name="colorTeal500">#009688</color>
+    <color name="colorTeal700">#00796B</color>
+    <color name="colorCyan500">#00BCD4</color>
+    <color name="colorCyan700">#0097A7</color>
+    <color name="colorIndigo500">#3F51B5</color>
+    <color name="colorIndigo700">#303F9F</color>
+    <color name="colorGrey500">#9E9E9E</color>
+    <color name="colorGrey700">#616161</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorLightWhite">#80FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorLightBlack">#80000000</color>
+</resources>

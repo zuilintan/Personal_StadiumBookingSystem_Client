@@ -1,0 +1,518 @@
+@startuml
+
+title __APP's Class Diagram__\n
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      class AboutActivity {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.entity {
+      class Account {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      class AccountActivity {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class ActivityUtil {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.base {
+      abstract class BaseActivity {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.base {
+      class BaseAppGlideModule {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.base {
+      class BaseApplication {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.base {
+      abstract class BaseDialog {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.base {
+      abstract class BaseFragment {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.base {
+      abstract class BaseRecyclerViewAdapter {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.base {
+      class BaseViewHolder {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    class BuildConfig {
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.dialog {
+      class ConfirmDialog {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.entity {
+      class DataTime {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class DateTimeUtil {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class DensityUtil {
+      }
+    }
+  }
+  
+
+  package com.bumptech.glide {
+    class GeneratedAppGlideModuleImpl {
+    }
+  }
+  
+
+  package com.bumptech.glide {
+    class GeneratedRequestManagerFactory {
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.base {
+      class GlideApp {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.base {
+      class GlideOptions {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.base {
+      class GlideRequest {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.base {
+      class GlideRequests {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class GlideUtil {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class GsonUtil {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.entity {
+      class Gym {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.adapter {
+      class GymAdapter {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.fragment {
+      class GymFragment {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.adapter {
+      class HistoryAdapter {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.fragment {
+      class HistoryFragment {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class HttpUtil {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class LogUtil {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      class LoginActivity {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      package com.lt.personal_stadiumbookingsystem.ui.activityBak.activity {
+        class MainActivity {
+        }
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      class MainActivity {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.fragment {
+      class MeFragment {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class OkHttpUtil {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.entity {
+      class Order {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      class OrderActivity {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class ReflectionUtil {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      class RegisterActivity {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class SPUtil {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class ScreenUtil {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      class SettingActivity {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.entity {
+      class Site {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      package com.lt.personal_stadiumbookingsystem.ui.activityBak.activity {
+        class SiteActivity {
+        }
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      class SiteActivity {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.adapter {
+      class SiteAdapter {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.constant {
+      class SpConstant {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      class ThemeActivity {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.entity {
+      class Time {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      class TimeActivity {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.activity {
+      package com.lt.personal_stadiumbookingsystem.ui.activityBak.activity {
+        class TimeActivity {
+        }
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.ui.adapter {
+      class TimeAdapter {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class ToastUtil {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.constant {
+      class UrlConstant {
+      }
+    }
+  }
+  
+
+  AboutActivity -up-|> BaseActivity
+  AccountActivity -up-|> OnClickListener
+  AccountActivity -up-|> BaseActivity
+  BaseActivity -up-|> AppCompatActivity
+  BaseAppGlideModule -up-|> AppGlideModule
+  BaseApplication -up-|> Application
+  BaseDialog -up-|> DialogFragment
+  BaseDialog o-- OnDialogClickListener : mOnDialogClickListener
+  BaseFragment -up-|> Fragment
+  BaseRecyclerViewAdapter -up-|> OnClickListener
+  BaseRecyclerViewAdapter -up-|> OnLongClickListener
+  BaseRecyclerViewAdapter -up-|> Adapter
+  BaseRecyclerViewAdapter o-- OnItemClickListener : mItemClickListener
+  BaseRecyclerViewAdapter o-- OnItemLongClickListener : mItemLongClickListener
+  BaseViewHolder -up-|> ViewHolder
+  ConfirmDialog -up-|> BaseDialog
+  GeneratedAppGlideModuleImpl -up-|> GeneratedAppGlideModule
+  GeneratedAppGlideModuleImpl o-- BaseAppGlideModule : appGlideModule
+  GeneratedRequestManagerFactory -up-|> RequestManagerFactory
+  GlideOptions -up-|> Cloneable
+  GlideOptions -up-|> RequestOptions
+  GlideRequest -up-|> Cloneable
+  GlideRequest -up-|> RequestBuilder
+  GlideRequests -up-|> RequestManager
+  GymAdapter -up-|> BaseRecyclerViewAdapter
+  GymFragment -up-|> BaseFragment
+  GymFragment o-- GymAdapter : mGymAdapter
+  HistoryAdapter -up-|> BaseRecyclerViewAdapter
+  HistoryAdapter o-- ConfirmDialog : mPayDialog
+  HistoryAdapter o-- ConfirmDialog : mCancelDialog
+  HistoryFragment -up-|> BaseFragment
+  HistoryFragment o-- HistoryAdapter : mHistoryAdapter
+  LoginActivity -up-|> BaseActivity
+  MainActivity -up-|> BaseActivity
+  MainActivity o-- GymFragment : mGymFragment
+  MainActivity o-- HistoryFragment : mHistoryFragment
+  MainActivity o-- MeFragment : mMeFragment
+  MainActivity -up-|> BaseActivity
+  MainActivity o-- GymFragment : mGymFragment
+  MainActivity o-- HistoryFragment : mHistoryFragment
+  MainActivity o-- MeFragment : mMeFragment
+  MeFragment -up-|> BaseFragment
+  OrderActivity -up-|> BaseActivity
+  OrderActivity o-- Order : mOrder
+  OrderActivity o-- ConfirmDialog : mPayDialog
+  OrderActivity o-- ConfirmDialog : mCancelDialog
+  RegisterActivity -up-|> BaseActivity
+  SettingActivity -up-|> OnClickListener
+  SettingActivity -up-|> BaseActivity
+  SiteActivity -up-|> BaseActivity
+  SiteActivity o-- SiteAdapter : mSiteAdapter
+  SiteActivity -up-|> BaseActivity
+  SiteActivity o-- SiteAdapter : mSiteAdapter
+  SiteAdapter -up-|> BaseRecyclerViewAdapter
+  ThemeActivity -up-|> OnClickListener
+  ThemeActivity -up-|> BaseActivity
+  TimeActivity -up-|> BaseActivity
+  TimeActivity o-- TimeAdapter : mTimeAdapter
+  TimeActivity -up-|> BaseActivity
+  TimeActivity o-- TimeAdapter : mTimeAdapter
+  TimeAdapter -up-|> OnClickListener
+  TimeAdapter -up-|> BaseRecyclerViewAdapter
+  TimeAdapter o-- DataCallBack : mBookCallBack
+  TimeAdapter o-- ConfirmDialog : mBookDialog
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

@@ -1,0 +1,259 @@
+@startuml
+
+title __UTIL's Class Diagram__\n
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class ActivityUtil {
+          {static} - sActivityStack : Stack<Activity>
+          - ActivityUtil()
+          {static} + add()
+          {static} + remove()
+          {static} + getLast()
+          {static} + getFirst()
+          {static} + finish()
+          {static} + finishAll()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class DateTimeUtil {
+          {static} - calendar : Calendar
+          {static} - FORMAT_DATE : String
+          {static} - FORMAT_TIME : String
+          {static} - FORMAT_DATE_TIME : String
+          - DateTimeUtil()
+          {static} + getDate()
+          {static} + getDate()
+          {static} + getTime()
+          {static} + getDateTime()
+          {static} + getDayOfWeek()
+          {static} + getCurrentYear()
+          {static} + getCurrentMonth()
+          {static} + getCurrentDayOfMonth()
+          {static} + getCurrentDayOfWeek()
+          {static} + getCurrentHour()
+          {static} + getCurrentMinute()
+          {static} + getCurrentSecond()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class DensityUtil {
+          - DensityUtil()
+          {static} + dp2px()
+          {static} + px2dp()
+          {static} + sp2px()
+          {static} + px2sp()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class GlideUtil {
+          - GlideUtil()
+          {static} + loadImage()
+          {static} + loadImageNoCache()
+          {static} + loadCircleImage()
+          {static} - load()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class GsonUtil {
+          {static} - sGson : Gson
+          - GsonUtil()
+          {static} + objectToJson()
+          {static} + jsonToObject()
+          {static} + jsonToList()
+          {static} + jsonToMap()
+          {static} + jsonToMapList()
+          {static} + objectCastList()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class HttpUtil {
+          {static} - TIMEOUT_IN_MILLIONS : int
+          - HttpUtil()
+          {static} + doGetAsyn()
+          {static} + doPostAsyn()
+          {static} - doGet()
+          {static} - doPost()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      interface CallBack {
+          {abstract} + onRequestComplete()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class LogUtil {
+          {static} - sIsEnabled : boolean
+          {static} - sTagPrefix : String
+          - LogUtil()
+          {static} + isEnabled()
+          {static} - generateTag()
+          {static} + v()
+          {static} + v()
+          {static} + d()
+          {static} + d()
+          {static} + i()
+          {static} + i()
+          {static} + w()
+          {static} + w()
+          {static} + w()
+          {static} + e()
+          {static} + e()
+          {static} + wtf()
+          {static} + wtf()
+          {static} + wtf()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class OkHttpUtil {
+          {static} - sOkHttpUtil : OkHttpUtil
+          {static} - sOkHttpClient : OkHttpClient
+          - mHandler : Handler
+          - OkHttpUtil()
+          {static} - getInstance()
+          {static} + getFormRequest()
+          {static} + postFormRequest()
+          {static} + postJsonRequest()
+          - getFormAsync()
+          - postFormAsync()
+          - postJsonAsync()
+          - deliverDataFailure()
+          - deliverDataSuccess()
+          {static} - jointUrl()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      interface DataCallBack {
+          {abstract} + requestSuccess()
+          {abstract} + requestFailure()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class ReflectionUtil {
+          - ReflectionUtil()
+          {static} + getPrivateField()
+          {static} + setPrivateField()
+          {static} + invokePrivateMethod()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class SPUtil {
+          {static} - FILE_NAME : String
+          - SPUtil()
+          {static} + put()
+          {static} + get()
+          {static} + remove()
+          {static} + clear()
+          {static} + contains()
+          {static} + getAll()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class SharedPreferencesCompat {
+          {static} - sApplyMethod : Method
+          {static} - findApplyMethod()
+          {static} + apply()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class ScreenUtil {
+          - ScreenUtil()
+          {static} + setNoActionBar()
+          {static} + cancelNoActionBar()
+          {static} + setNoStatusBar()
+          {static} + cancelNoStatusBar()
+          {static} + getScreenWidth()
+          {static} + getScreenHeight()
+          {static} + getStatusBarHeight()
+          {static} + snapShotWithStatusBar()
+          {static} + snapShotWithoutStatusBar()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.util {
+      class ToastUtil {
+          {static} - sIsEnabled : boolean
+          {static} - sToast : Toast
+          - ToastUtil()
+          {static} + isEnabled()
+          {static} + cancelToast()
+          {static} + showShortTop()
+          {static} + showShortCenter()
+          {static} + showShortBottom()
+          {static} + showLongTop()
+          {static} + showLongCenter()
+          {static} + showLongBottom()
+          {static} - show()
+      }
+    }
+  }
+  
+
+  HttpUtil +-down- CallBack
+  OkHttpUtil +-down- DataCallBack
+  SPUtil +-down- SharedPreferencesCompat
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

@@ -1,0 +1,217 @@
+@startuml
+
+title __BASE's Class Diagram__\n
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.base {
+      abstract class BaseActivity {
+          - mPressBackTime : long
+          # onCreate()
+          # onResume()
+          # onDestroy()
+          + onOptionsItemSelected()
+          + onBackPressed()
+          {abstract} # setLayoutResId()
+          {abstract} # bindData()
+          {abstract} # bindView()
+          {abstract} # initData()
+          {abstract} # initView()
+          {abstract} # initListener()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.base {
+      class BaseAppGlideModule {
+          - interceptor : LoggingInterceptor
+          - mClient : OkHttpClient
+          + registerComponents()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.base {
+      class BaseApplication {
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.base {
+      abstract class BaseDialog {
+          + mContext : Context
+          - mLayoutResId : int
+          - mWidth : int
+          - mHeight : int
+          - mAnimStyle : int
+          - mHorizontalMargin : int
+          - mDimAmount : float
+          - mOutCancel : boolean
+          - mBottomShow : boolean
+          - mAgreeView : View
+          - mDenyView : View
+          + onAttach()
+          + onCreate()
+          + onCreateView()
+          + onActivityCreated()
+          + onStart()
+          + setOnDialogClickListener()
+          - initParams()
+          + setSize()
+          + setHorizontalMargin()
+          + setBottomShow()
+          + setOutCancel()
+          + setDimAmout()
+          + setAnimStyle()
+          + show()
+          + getScreenWidth()
+          + dp2px()
+          {abstract} # setLayoutResId()
+          {abstract} # setAgreeButtonId()
+          {abstract} # setDenyButtonId()
+          {abstract} # initView()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.base {
+      interface OnDialogClickListener {
+          {abstract} + onAgreeClickListener()
+          {abstract} + onCancelClickListener()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.base {
+      abstract class BaseFragment {
+          # mContext : Context
+          + onAttach()
+          + onCreate()
+          + onCreateView()
+          + onActivityCreated()
+          + onResume()
+          {abstract} # setLayoutResId()
+          {abstract} # bindData()
+          {abstract} # bindView()
+          {abstract} # initData()
+          {abstract} # initView()
+          {abstract} # initListener()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.base {
+      abstract class BaseRecyclerViewAdapter {
+          - VIEW_TYPE_ITEM : int
+          - VIEW_TYPE_HEAD : int
+          - VIEW_TYPE_FOOT : int
+          - mItemViewId : int
+          - mHeadViewId : int
+          - mFootViewId : int
+          - mDataSourceList : List<DS>
+          + BaseRecyclerViewAdapter()
+          + onCreateViewHolder()
+          + onBindViewHolder()
+          + onBindViewHolder()
+          + getItemId()
+          + getItemCount()
+          + getItemViewType()
+          + onAttachedToRecyclerView()
+          + onViewAttachedToWindow()
+          + addHeadView()
+          + addFootView()
+          + add()
+          + del()
+          + update()
+          + clear()
+          + refresh()
+          + loadMore()
+          + setItemClickListener()
+          + setItemLongClickListener()
+          + onClick()
+          + onLongClick()
+          {abstract} # initView()
+          {abstract} # updateView()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.base {
+      interface OnItemClickListener {
+          {abstract} + onItemClick()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.base {
+      interface OnItemLongClickListener {
+          {abstract} + onItemLongClick()
+      }
+    }
+  }
+  
+
+  package com.lt.personal_stadiumbookingsystem {
+    package com.lt.personal_stadiumbookingsystem.base {
+      class BaseViewHolder {
+          - mSparseArray : SparseArray<View>
+          + mItemView : View
+          + BaseViewHolder()
+          {static} + newInstance()
+          + findViewById()
+          + setText()
+          + getText()
+          + setTextColor()
+          + setImageResource()
+          + setBackgroundResource()
+          + setBackgroundColor()
+          + setVisibility()
+          + setOnClickListener()
+      }
+    }
+  }
+  
+
+  BaseActivity -up-|> AppCompatActivity
+  HostCallbacks -up-|> FragmentHostCallback
+  BaseAppGlideModule -up-|> AppGlideModule
+  BaseApplication -up-|> Application
+  BaseDialog -up-|> DialogFragment
+  BaseDialog o-- OnDialogClickListener : mOnDialogClickListener
+  BaseDialog +-down- OnDialogClickListener
+  SavedState -up-|> Parcelable
+  BaseFragment -up-|> Fragment
+  SavedState -up-|> Parcelable
+  BaseRecyclerViewAdapter -up-|> OnClickListener
+  BaseRecyclerViewAdapter -up-|> OnLongClickListener
+  BaseRecyclerViewAdapter -up-|> Adapter
+  BaseRecyclerViewAdapter o-- OnItemClickListener : mItemClickListener
+  BaseRecyclerViewAdapter o-- OnItemLongClickListener : mItemLongClickListener
+  BaseRecyclerViewAdapter +-down- OnItemClickListener
+  BaseRecyclerViewAdapter +-down- OnItemLongClickListener
+  BaseViewHolder -up-|> ViewHolder
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
